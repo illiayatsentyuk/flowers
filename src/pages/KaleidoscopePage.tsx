@@ -246,13 +246,10 @@ export function KaleidoscopePage() {
                   <g className="dots">{flowerSvg.centerDots}</g>
                 </svg>
               </motion.div>
-              <p className="hint" style={{ textAlign: 'center' }}>
-                🌸 Наведіть на пелюстки для ефекту підсвічування
-              </p>
             </div>
 
             <div className="kaleidoscope-controls">
-              <h3 className="k-title">🎨 Налаштування</h3>
+              <h3 className="k-title">Налаштування</h3>
 
               <div className="control-group">
                 <label htmlFor="petal-color">Колір пелюсток</label>
@@ -328,7 +325,7 @@ export function KaleidoscopePage() {
                     })
                   }}
                 >
-                  🎲 Випадковий візерунок
+                  Випадковий візерунок
                 </button>
                 <button
                   id="reset-btn"
