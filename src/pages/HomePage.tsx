@@ -71,23 +71,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="section section-alt">
-        <div className="container">
-          <div className="poem-box">
-            <h3>🌸 Вірш про квіти надії</h3>
-            <p className="poem-text">
-              Квітне соняшник у полі золотім,
-              <br />
-              Мак червоний — серце в полум&apos;ї святім.
-              <br />
-              Калинонька рідна, вітами обвита,
-              <br />
-              Україно-мамо, ти — душа незбита!
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="section section-blue">
         <div className="container">
           <h2 className="section-title">Надія квітне завжди</h2>

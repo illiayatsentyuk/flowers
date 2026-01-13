@@ -188,7 +188,7 @@ export function GalleryPage() {
         <div className="container text-center">
           <h2 className="section-title">Створіть власну квітку!</h2>
           <p className="section-subtitle">
-            Відвідайте наш інтерактивний калейдоскоп і створіть унікальний квітковий візерунок
+            Відвідайте мій інтерактивний калейдоскоп і створіть унікальний квітковий візерунок
           </p>
           <Link to="/kaleidoscope" className="btn btn-accent">
             Спробувати калейдоскоп
