@@ -64,14 +64,12 @@ export function GalleryPage() {
     setIndex(wrapped)
   }
 
-  // Autoplay (matches CONFIG.autoplayInterval in slider.js)
   useEffect(() => {
     if (isPaused) return
     const t = window.setInterval(() => goTo(index + 1), 5000)
     return () => window.clearInterval(t)
   }, [index, isPaused])
 
-  // Keyboard navigation (ArrowLeft / ArrowRight)
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowLeft') {
@@ -86,7 +84,6 @@ export function GalleryPage() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [index])
 
-  // Touch swipe support similar to slider.js
   useEffect(() => {
     const wrapper = sliderRef.current
     if (!wrapper) return

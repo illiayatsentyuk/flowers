@@ -23,7 +23,6 @@ function clampInt(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, Math.round(n)))
 }
 
-// Color utilities (from kaleidoscope.js)
 function hexToHsl(hex: string): { h: number; s: number; l: number } {
   const r = parseInt(hex.slice(1, 3), 16) / 255
   const g = parseInt(hex.slice(3, 5), 16) / 255
@@ -154,13 +153,12 @@ export function KaleidoscopePage() {
     setSettings(presets[preset])
   }, [preset, presets])
 
-  // Flower SVG generation (matches kaleidoscope.js logic)
   const flowerSvg = useMemo(() => {
     const cx = 200
     const cy = 200
     const petalLen = 55
     const petalW = 18
-    const petalOffset = 75 // Distance from center to petal tip
+    const petalOffset = 75
     const numPetals = settings.petalCount
 
     const petalLightColor = lighten(settings.petalColor, 30)
@@ -170,7 +168,6 @@ export function KaleidoscopePage() {
 
     const petals = Array.from({ length: numPetals }, (_, i) => {
       const angle = (360 / numPetals) * i
-      // Each petal is a group that rotates around the center
       return (
         <g key={i} transform={`rotate(${angle} ${cx} ${cy})`}>
           <ellipse

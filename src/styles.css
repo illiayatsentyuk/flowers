@@ -1,5 +1,4 @@
 :root {
-  /* Ukrainian Colors */
   --ua-blue: #0057B8;
   --ua-blue-light: #3d8ed9;
   --ua-blue-dark: #003d80;
@@ -7,7 +6,6 @@
   --ua-yellow-light: #ffe44d;
   --ua-yellow-dark: #cc9f00;
   
-  /* Flower Colors */
   --sunflower-petal: #FFD700;
   --sunflower-center: #5D4E37;
   --poppy-red: #E63946;
@@ -18,7 +16,6 @@
   --chamomile-center: #F4C430;
   --tulip-red: #FF6B6B;
   
-  /* Neutral Colors */
   --white: #FFFFFF;
   --cream: #FFFEF7;
   --gray-50: #F9FAFB;
@@ -32,11 +29,9 @@
   --gray-800: #1F2937;
   --gray-900: #111827;
   
-  /* Typography */
   --font-display: 'Georgia', 'Times New Roman', serif;
   --font-body: 'Segoe UI', 'Arial', sans-serif;
   
-  /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -45,14 +40,12 @@
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
   
-  /* Border Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
   --radius-xl: 24px;
   --radius-full: 9999px;
   
-  /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -60,17 +53,14 @@
   --shadow-glow-blue: 0 0 20px rgba(0, 87, 184, 0.3);
   --shadow-glow-yellow: 0 0 20px rgba(255, 215, 0, 0.3);
   
-  /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms ease;
   
-  /* Container */
   --container-max: 1200px;
   --container-padding: 1.5rem;
 }
 
-/* Reset & Base Styles */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -124,7 +114,6 @@ main {
   flex: 1;
 }
 
-/* Header & Navigation */
 .site-header {
   background: linear-gradient(135deg, var(--ua-blue) 0%, var(--ua-blue-dark) 100%);
   padding: var(--spacing-md) 0;
@@ -247,7 +236,6 @@ main {
   }
 }
 
-/* Hero */
 .hero {
   position: relative;
   min-height: 70vh;
@@ -311,7 +299,6 @@ main {
   animation: fadeInUp 1s ease-out 0.4s both;
 }
 
-/* Section Styles */
 .section {
   padding: var(--spacing-3xl) 0;
 }
@@ -347,7 +334,6 @@ main {
   color: var(--gray-200);
 }
 
-/* Card Components */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -419,7 +405,6 @@ main {
   color: var(--ua-yellow-dark);
 }
 
-/* CTA Cards */
 .cta-card {
   text-align: center;
   padding: var(--spacing-2xl);
@@ -436,7 +421,6 @@ main {
   margin-bottom: var(--spacing-md);
 }
 
-/* Flower Cards */
 .flower-card {
   background: var(--white);
   border-radius: var(--radius-xl);
@@ -549,7 +533,6 @@ main {
   border-left: 3px solid var(--ua-yellow);
 }
 
-/* Gallery / Slider */
 .slider-container {
   position: relative;
   max-width: 900px;
@@ -661,7 +644,6 @@ main {
   transform: scale(1.2);
 }
 
-/* Kaleidoscope Page */
 .kaleidoscope-wrapper {
   display: grid;
   grid-template-columns: 1fr 400px;
@@ -812,7 +794,6 @@ main {
   margin-top: var(--spacing-xl);
 }
 
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -868,7 +849,6 @@ main {
   background: var(--gray-300);
 }
 
-/* Toast Notification */
 .toast {
   position: fixed;
   bottom: var(--spacing-xl);
@@ -896,7 +876,6 @@ main {
   background: linear-gradient(135deg, #10B981 0%, #059669 100%);
 }
 
-/* Poem Box */
 .poem-box {
   background: linear-gradient(135deg, var(--ua-blue) 0%, var(--ua-blue-dark) 100%);
   color: var(--white);
@@ -940,7 +919,6 @@ main {
   line-height: 2;
 }
 
-/* Conclusion Box */
 .conclusion-box {
   background: linear-gradient(135deg, var(--ua-yellow-light) 0%, var(--ua-yellow) 100%);
   padding: var(--spacing-2xl);
@@ -960,7 +938,6 @@ main {
   font-size: 1.125rem;
 }
 
-/* Footer */
 .site-footer {
   background: linear-gradient(135deg, var(--gray-800) 0%, var(--gray-900) 100%);
   color: var(--gray-300);
@@ -1009,7 +986,6 @@ main {
   color: var(--ua-yellow);
 }
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1047,7 +1023,6 @@ main {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Staggered animations for cards */
 .cards-grid .card:nth-child(1) {
   animation: fadeInUp 0.6s ease-out 0.1s both;
 }
@@ -1060,7 +1035,6 @@ main {
   animation: fadeInUp 0.6s ease-out 0.3s both;
 }
 
-/* Page Title Headers */
 .page-header {
   background: linear-gradient(135deg, var(--ua-blue) 0%, var(--ua-blue-dark) 100%);
   padding: var(--spacing-3xl) 0;
@@ -1095,7 +1069,6 @@ main {
   z-index: 1;
 }
 
-/* Utility Classes */
 .text-center {
   text-align: center;
 }
@@ -1130,7 +1103,6 @@ main {
   border: 0;
 }
 
-/* Small wrapper for React shell */
 .app-shell {
   min-height: 100vh;
   display: flex;

@@ -18,12 +18,10 @@ export function Header() {
   const location = useLocation()
   const navRef = useRef<HTMLElement | null>(null)
 
-  // Close on route change
   useEffect(() => {
     setIsOpen(false)
   }, [location.pathname])
 
-  // Close when clicking outside (mobile menu behaviour from main.js)
   useEffect(() => {
     if (!isOpen) return
     function handleClick(e: MouseEvent) {
